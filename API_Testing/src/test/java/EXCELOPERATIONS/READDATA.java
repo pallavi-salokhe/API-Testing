@@ -16,6 +16,7 @@ public class READDATA {
 
 	public static FileInputStream fs = null;
 	
+	
 	public static FileInputStream getFileHandle(String filename) throws FileNotFoundException
 	{
 		fs = new FileInputStream(new File(filename));

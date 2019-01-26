@@ -44,17 +44,10 @@ public class SUITEOPERATIONS extends CONFIGURATION{
 		//then validate the data as well
 		Init();
 		BufferedReader br =ReadFileData.getFileHandle(CONFIGURATION.GET_DATA);
-	//	int rowcount = READDATA.GetTotalRowCount(fs,0);
-		//int colcount =READDATA.GetTotalColumnCount(fs,0);
+	
 		String[] headers = ReadFileData.getHeaders(br);
 		String line = "";
-		// CatalogReader reader2 = null;
-		// long countOfLines = Files.lines(Paths.get(new File(CONFIGURATION.GET_DATA).getPath())).count();
-		 
-	//		System.out.println(countOfLines);
-			
-			//br.readLine();
-		//	br.	;
+		
 			String line1=null;
 			 while ((line1 = br.readLine()) != null){ //loop will run from 2nd line
 			        //some code
