@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APIDETAILS>
+	<API>
+			<URL>http://localhost:3000/users</URL>
+			<OPERATION>GET</OPERATION>
+			<VALIDATERESPONSE>
+			<RESPONSESTATUSCODE>200</RESPONSESTATUSCODE>
+			<RESPONSETIME>500</RESPONSETIME>
+			<RESPONSEBODYBODY>Jogeff.Davison@gmail.com</RESPONSEBODY>
+			<RESPONSECONTENTTYPE>application/json</RESPONSECONTENTTYPE>	
+			</VALIDATERESPONSE>			
+	</API>
+	<API>
+			<URL>http://localhost:3000/users</URL>
+			<OPERATION>POST</OPERATION>
+			<CONTENTTYPE>application/json</CONTENTTYPE>	
+			<DATA>{"id": "6","firstname": "Jogeff","lastname": "Davidson","email": "Jogeff.Davison@gmail.com","age": 33,"companyId": "1"}</DATA>
+			<VALIDATE>201</VALIDATE>
+	</API>
+	<API>
+			<URL>http://localhost:3000/users/5</URL>
+			<OPERATION>DELETE</OPERATION>			
+	</API>
+	<API>
+			<URL>http://localhost:3000/users/5</URL>
+			<OPERATION>PUT</OPERATION>
+			<CONTENTTYPE></CONTENTTYPE>	
+			<DATA>{"id": "5","firstname": "Janet","lastname": "Williams","email": "Janet.Williams@gmail.com","age": 34,"companyId": "1"}</DATA>
+			<VALIDATE>200</VALIDATE>		
+	</API>
+	<API>
+			<URL>http://localhost:3000/users</URL>
+			<OPERATION>POST</OPERATION>
+			<CONTENTTYPE>application/xml</CONTENTTYPE>	
+			<DATA>
+				<![CDATA[
+				<id>6</id>application/json
+				<firstname>Jogeff</firstname>
+				<lastname>Johnson</lastname>
+				<email>Jogeff.Thomas@gmail.com</email>
+				<age>33</age>
+				<companyId>1</companyId>
+				]]>
+			</DATA>
+			<VALIDATE>201</VALIDATE>
+	</API>
+</APIDETAILS>

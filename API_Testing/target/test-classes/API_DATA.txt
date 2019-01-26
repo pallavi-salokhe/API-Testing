@@ -1,0 +1,6 @@
+URL|OPERATION|PARAMETERYPE|DATA|RESPONSESTATUSCODE|RESPONSETIME|EXPECTEDRESPONSE|RESPONSECONTENTTYPE|
+http://localhost:3000/users|GET|Query|id=5~id=2|200|500|firstname=Jan=false|application/json|
+http://localhost:3000/users|GET|||200|500|firstname=Karen=true~lastname=Jackson=true|application/json|
+http://localhost:3000/users|POST|JSON|{"id": "6","firstname": "Jogeff","lastname": "Davidson","email": "Jogeff.Davidson@gmail.com","age": 33,"companyId": "1"}|201|500|email=Jogeff.Davidson@gmail.com=true|application/json|
+http://localhost:3000/users|DELETE|Query|id=5|200|500|firstname=Janet=false|application/json|
+http://localhost:3000/users/6|DELETE|||200|500|firstname=Jogeff=false|application/json|

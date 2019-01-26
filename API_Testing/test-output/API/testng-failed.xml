@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [API]">
+  <test name="verify if the API request can get executed(failed)">
+    <classes>
+      <class name="EXECUTION.SUITEOPERATIONS">
+        <methods>
+          <include name="StartSuite"/>
+        </methods>
+      </class> <!-- EXECUTION.SUITEOPERATIONS -->
+    </classes>
+  </test> <!-- verify if the API request can get executed(failed) -->
+</suite> <!-- Failed suite [API] -->

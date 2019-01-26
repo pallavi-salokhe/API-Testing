@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GET]">
+  <test name="verify if the request can get values by get method(failed)">
+    <classes>
+      <class name="MODULES.GetAPIData">
+        <methods>
+          <include name="FetchAPIData"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- MODULES.GetAPIData -->
+    </classes>
+  </test> <!-- verify if the request can get values by get method(failed) -->
+</suite> <!-- Failed suite [GET] -->
