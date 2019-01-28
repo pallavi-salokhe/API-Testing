@@ -7,11 +7,10 @@ import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import jdk.internal.org.xml.sax.SAXException;
-
+import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+import org.xml.sax.SAXException;
 
-import bsh.ParseException;
 import CONFIG.CONFIGURATION;
 import FileOperations.ReadFileData;
 import JSONMODULES_RestAssured.GetData;
@@ -20,7 +19,7 @@ import JSONMODULES_RestAssured.GetData;
 
 public class SUITEOPERATIONS extends CONFIGURATION{
 @Test
-	public void StartSuite() throws IOException, ParserConfigurationException, SAXException, ParseException, InterruptedException, org.json.simple.parser.ParseException, org.xml.sax.SAXException
+	public void StartSuite() throws IOException, ParserConfigurationException, SAXException, InterruptedException, ParseException
 	{
 		//get file location from config file
 		//geet csv handle 
