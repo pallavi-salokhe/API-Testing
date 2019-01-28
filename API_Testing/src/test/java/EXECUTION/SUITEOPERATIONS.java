@@ -1,38 +1,26 @@
 package EXECUTION;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.json.simple.parser.ParseException;
+import jdk.internal.org.xml.sax.SAXException;
+
 import org.testng.annotations.Test;
-import org.xml.sax.SAXException;
 
-import com.sun.org.apache.xml.internal.resolver.readers.CatalogReader;
-
+import bsh.ParseException;
 import CONFIG.CONFIGURATION;
-import EXCELOPERATIONS.READDATA;
 import FileOperations.ReadFileData;
-import JSONMODULES_RestAssured.DeleteData;
 import JSONMODULES_RestAssured.GetData;
-import JSONMODULES_RestAssured.PostData;
+
+
 
 public class SUITEOPERATIONS extends CONFIGURATION{
 @Test
-	public void StartSuite() throws IOException, ParserConfigurationException, SAXException, ParseException, InterruptedException
+	public void StartSuite() throws IOException, ParserConfigurationException, SAXException, ParseException, InterruptedException, org.json.simple.parser.ParseException, org.xml.sax.SAXException
 	{
 		//get file location from config file
 		//geet csv handle 
@@ -46,7 +34,7 @@ public class SUITEOPERATIONS extends CONFIGURATION{
 		BufferedReader br =ReadFileData.getFileHandle(CONFIGURATION.GET_DATA);
 	
 		String[] headers = ReadFileData.getHeaders(br);
-		String line = "";
+		//String line = "";
 		
 			String line1=null;
 			 while ((line1 = br.readLine()) != null){ //loop will run from 2nd line
@@ -76,11 +64,11 @@ public class SUITEOPERATIONS extends CONFIGURATION{
 					 }
 				 else if(op.equalsIgnoreCase("POST"))
 				 {
-					 PostData.PostResponse(CSVData);
+		//			 PostData.PostResponse(CSVData);
 				 } 
 				 else if(op.equalsIgnoreCase("DELETE"))
 				 {
-					 DeleteData.DeleteResponse(CSVData);
+				//	 DeleteData.DeleteResponse(CSVData);
 				 }
 				 
 				 System.out.println("===============================================");

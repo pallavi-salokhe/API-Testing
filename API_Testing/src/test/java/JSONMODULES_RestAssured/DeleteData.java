@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import CONFIG.CONFIGURATION;
 
+
 public class DeleteData  extends CONFIGURATION {
 
 	@Test

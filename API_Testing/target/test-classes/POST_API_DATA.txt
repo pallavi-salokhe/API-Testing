@@ -1,1 +1,0 @@
-URLCNT=URLCNT1-users;URL=http://localhost:3000/users;Content-Type=application/json;Data=G:\\Selenium\\TestNg\\API_Testing\\src\\test\\resources\\Post.json

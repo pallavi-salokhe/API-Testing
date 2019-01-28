@@ -1,6 +1,0 @@
-URL,OPERATION,Parameter Type,DATA,RESPONSESTATUSCODE,RESPONSETIME,Expected Response,RESPONSECONTENTTYPE
-http://localhost:3000/users,GET,,,200,500,firstname=jogeff~lastname=joshi~id=.*,application/json
-http://localhost:3000/users,GET,Query,id=6&firstname=Jogeff,200,500,firstname=jogeff~lastname=joshi~id=.*,application/json
-http://localhost:3000/users,POST,JSON,"{""id"": ""6"",""firstname"": ""Jogeff"",""lastname"": ""Davidson"",""email"": ""Jogeff.Davison@gmail.com"",""age"": 33,""companyId"": ""1""}",201,500,Jogeff.Davison@gmail.com,application/json
-http://localhost:3000/users,DELETE,Query,id=5,200,500,,
-http://localhost:3000/users,PUT,Query,id=5,,,,application/json
